@@ -876,6 +876,15 @@ require('lazy').setup({
       -- - sr)'  - [S]urround [R]eplace [)] [']
       require('mini.surround').setup()
 
+      -- Use autopairs
+      require('mini.pairs').setup {
+        mappings = {
+          ['"'] = { neigh_pattern = '[^\\"].' },
+          ["'"] = { neigh_pattern = "[^%a\\']." },
+          ['`'] = { neigh_pattern = '[^\\`].' },
+        },
+      }
+
       -- Simple and easy statusline.
       --  You could remove this setup call if you don't like it,
       --  and try some other statusline plugin
