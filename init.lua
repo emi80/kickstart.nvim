@@ -641,6 +641,7 @@ require('lazy').setup({
             },
           },
         },
+        zls = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -708,6 +709,7 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        zig = { 'zig fmt' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
