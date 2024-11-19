@@ -642,6 +642,7 @@ require('lazy').setup({
           },
         },
         zls = {},
+        ruff = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -710,6 +711,7 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         zig = { 'zig fmt' },
+        python = { 'ruff_fix', 'ruff_format', 'ruff_organize_imports' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
