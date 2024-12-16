@@ -642,7 +642,28 @@ require('lazy').setup({
           },
         },
         zls = {},
-        ruff = {},
+        pyright = {
+          settings = {
+            pyright = {
+              disableOrganizeImports = true, -- Using Ruff
+            },
+            python = {
+              analysis = {
+                ignore = { '*' }, -- Using Ruff
+                typeCheckingMode = 'off', -- Using mypy
+              },
+            },
+          },
+        },
+        ruff = {
+          -- trace = 'messages',
+          -- init_options = {
+          --   settings = {
+          --     logLevel = 'debug',
+          --   },
+          -- },
+        },
+        -- perlnavigator = {},
       }
 
       -- Ensure the servers and tools above are installed
