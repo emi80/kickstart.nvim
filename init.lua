@@ -982,5 +982,10 @@ require('lazy').setup({
   },
 })
 
+-- NOTE: Include custom cofigurations
+require 'custom/filetypes'
+require 'custom/nextflow'
+require 'custom/term'
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
