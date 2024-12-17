@@ -735,6 +735,7 @@ require('lazy').setup({
         zig = { 'zigfmt' },
         python = { 'ruff_fix', 'ruff_format', 'ruff_organize_imports' },
         snakemake = { 'snakefmt' },
+        perl = { 'perltidy' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
