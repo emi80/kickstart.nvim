@@ -736,6 +736,7 @@ require('lazy').setup({
         python = { 'ruff_fix', 'ruff_format', 'ruff_organize_imports' },
         snakemake = { 'snakefmt' },
         perl = { 'perltidy' },
+        r = { "styler", },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
