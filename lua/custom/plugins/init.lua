@@ -6,4 +6,7 @@ return {
   {
     'tpope/vim-fugitive',
   },
+  {
+    'jamessan/vim-gnupg',
+  },
 }
